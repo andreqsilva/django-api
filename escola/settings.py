@@ -136,7 +136,7 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle',
     ),
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '2/minute', # second, day, month, year
-        'user': '3/minute',
+        'anon': '10/minute', # second, day, month, year
+        'user': '50/minute',
     },
 }
