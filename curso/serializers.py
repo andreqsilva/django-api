@@ -23,12 +23,12 @@ class CursoSerializer(serializers.ModelSerializer):
 
     # 1. Nested Relationship
     # Registros relacionados são incluídos dentro de rcurso particular.
-    # avaliacoes = AvaliacaoSerializer(many=True, read_only=True)
+    #avaliacoes = AvaliacaoSerializer(many=True, read_only=True)
 
     # 2. HyperLinked Related Field
     # Registros, em links, dos elementos relacionados. 
     # Forma performática, recomendada para APIs REST.
-    # avaliacoes = serializers.HyperlinkedRelatedField(many=True, read_only=True, view_name='avaliacao-detail')
+    #avaliacoes = serializers.HyperlinkedRelatedField(many=True, read_only=True, view_name='avaliacao-detail')
 
     # 3. Primary Key Related Field
     # Registros, em PK, dos elementos relacionados.
